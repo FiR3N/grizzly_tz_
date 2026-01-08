@@ -1,0 +1,33 @@
+# Данные БД и их конфиги
+data/
+logs/
+ 
+# Переменные окружения (создаются локально)
+.env
+*.env.local
+*.env*.local
+ 
+!www/.env
+!www/.env.example
+
+# Системные файлы Docker
+.devcontainer/
+docker-compose.override.yml
+ 
+# Исключения для IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+ 
+# Временные файлы
+tmp/
+temp/
+ 
+# Зависимости Node.js
+node_modules/
+package-lock.json
+ 
+# Файлы ОС
+.DS_Store
+Thumbs.db

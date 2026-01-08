@@ -1,0 +1,47 @@
+/*#region TEXT */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--dark-gray-color);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+h4 {
+  font-weight: bold;
+  color: var(--dark-grey-color);
+}
+
+.default-text {
+  color: var(--default-black-color);
+}
+
+.gray-averta-ty-text {
+  font-weight: 400;
+  color: var(--company-gray-color);
+}
+
+.link {
+  color: var(--default-black-color);
+
+  transition: text-decoration 0.3s ease;
+}
+
+.error-text {
+  text-wrap: wrap;
+  color: var(--error-red-color);
+}
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    text-decoration: underline;
+  }
+}
+
+.low-text {
+  font-size: 0.813rem;
+}
+/*#endregion */

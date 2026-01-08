@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enemer</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__content container">
+          <img class="header__logo" src="./assets/images/logo.svg" />
+          <nav class="header__navigation">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="#">O nas</a></li>
+              <li class="header__menu-item"><a href="#">Usługi</a></li>
+              <li class="header__menu-item"><a href="#">Cennik</a></li>
+              <li class="header__menu-item"><a href="#">Kontakt</a></li>
+              <li class="header__menu-item"><a href="#">Opinie</a></li>
+              <li class="header__menu-item">
+                <a href="#">Pytania i odpowiedzi</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__phone">
+            <a href="tel:+48690590089" class="header__link link"
+              >+48690590089</a
+            >
+            <span class="low-text">Zamów rozmowę</span>
+          </div>
+          <div class="header__mobile-buttons">
+            <select class="header__language-changer">
+              <option selected>PL</option>
+              <option>ENG</option>
+              <option>RUS</option>
+            </select>
+            <div class="hamb" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="header__popup" id="header_popup">
+          <nav class="header__navigation">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="#">O nas</a></li>
+              <li class="header__menu-item"><a href="#">Usługi</a></li>
+              <li class="header__menu-item"><a href="#">Cennik</a></li>
+              <li class="header__menu-item"><a href="#">Kontakt</a></li>
+              <li class="header__menu-item"><a href="#">Opinie</a></li>
+              <li class="header__menu-item">
+                <a href="/">Pytania i odpowiedzi</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__phone">
+            <a href="tel:+48690590089" class="header__link link"
+              >+48690590089</a
+            >
+            <span class="low-text">Zamów rozmowę</span>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about-couriers container">
+          <div class="about-couriers__left">
+            <h1 class="about-couriers__title">Nasi kurierzy</h1>
+            <div class="about-couriers__partners">
+              <div class="about-couriers__partner">
+                <img src="./assets/images/dpd.svg" alt="dpd icon" />
+              </div>
+              <div class="about-couriers__partner">
+                <img src="./assets/images/gls.svg" alt="gls icon" />
+              </div>
+              <div class="about-couriers__partner">
+                <img src="./assets/images/dhl.svg" alt="dhl icon" />
+              </div>
+              <div class="about-couriers__partner">
+                <img src="./assets/images/shopify.svg" alt="shopify icon" />
+              </div>
+              <div class="about-couriers__partner">
+                <img
+                  src="./assets/images/woo_commerce.svg"
+                  alt="woo commerceoo icon"
+                />
+              </div>
+              <div class="about-couriers__partner">
+                <img
+                  src="./assets/images/prestashop.svg"
+                  alt="prestashop icon"
+                />
+              </div>
+              <div class="about-couriers__partner">
+                <img src="./assets/images/ppl.svg" alt="ppl icon" />
+              </div>
+              <div class="about-couriers__partner">
+                <img src="./assets/images/posta.svg" alt="posta icon" />
+              </div>
+              <div class="about-couriers__partner">
+                <img src="./assets/images/magento.svg" alt="magento icon" />
+              </div>
+            </div>
+          </div>
+          <div class="about-couriers__right">
+            <img src="./assets/images/our_couriers.webp" alt="our couriers" />
+          </div>
+        </section>
+        <section class="contact-us">
+          <img
+            class="contact-us__image"
+            src="./assets/images/storage.webp"
+            alt="storage"
+          />
+          <div class="contact-us__content container">
+            <div class="contact-us__form-content">
+              <form
+                class="contact-us__form"
+                method="post"
+                data-js-form
+                novalidate
+                action="php/form.php"
+              >
+                <h2 class="contact-us__form__title">
+                  Szukasz najlepszej oferty?
+                </h2>
+                <p class="contact-us__form__text default-text">
+                  Zostaw aplikację, a nasz menedżer skontaktuje się z Tobą w
+                  celu konsultacji
+                </p>
+                <div class="contact-us__form__full-name">
+                  <p class="contact-us__form__field">
+                    <input
+                      class="default-input"
+                      placeholder="Twoje imię"
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                      minlength="2"
+                      maxlength="50"
+                      pattern="[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż\s\-]+"
+                      aria-errormessage="name-errors"
+                      title="Разрешено вводить только латинские или польские символы"
+                    />
+                    <span
+                      class="contact-us__form__error"
+                      id="name-errors"
+                      data-js-form-field-errors
+                    ></span>
+                  </p>
+                  <p class="contact-us__form__field">
+                    <input
+                      class="default-input"
+                      placeholder="Twoje nazwisko"
+                      id="lastName"
+                      name="lastName"
+                      type="text"
+                      minlength="2"
+                      maxlength="50"
+                      pattern="[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż\s\-]+"
+                      title="Разрешено вводить только латинские или польские символы"
+                      aria-errormessage="lastname-errors"
+                      required
+                    />
+                    <span
+                      class="contact-us__form__error"
+                      id="lastname-errors"
+                      data-js-form-field-errors
+                    ></span>
+                  </p>
+                  <p class="contact-us__form__field">
+                    <input
+                      class="default-input"
+                      placeholder="Twoje drugie imię"
+                      type="text"
+                      id="patronymic"
+                      name="patronymic"
+                      maxlength="50"
+                      pattern="[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż\s\-]+"
+                      aria-errormessage="patronymic-errors"
+                      title="Разрешено вводить только латинские или польские символы"
+                    />
+                    <span
+                      class="contact-us__form__error"
+                      id="patronymic-errors"
+                      data-js-form-field-errors
+                    ></span>
+                  </p>
+                </div>
+                <p class="contact-us__form__field">
+                  <input
+                    class="default-input"
+                    placeholder="Twoja data urodzenia"
+                    onfocus="this.type = 'date'"
+                    onblur="this.type = 'text'"
+                    min="1900-01-01"
+                    id="birthDate"
+                    name="birthDate"
+                    type="text"
+                    aria-errormessage="date-errors"
+                    required
+                  />
+                  <span
+                    class="contact-us__form__error"
+                    id="date-errors"
+                    data-js-form-field-errors
+                  ></span>
+                </p>
+                <p class="contact-us__form__field">
+                  <input
+                    class="default-input"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                    aria-errormessage="email-errors"
+                  />
+                  <span
+                    class="contact-us__form__error"
+                    id="email-errors"
+                    data-js-form-field-errors
+                  ></span>
+                </p>
+                <p class="contact-us__form__field">
+                  <input
+                    class="default-input"
+                    placeholder="Telefon"
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    pattern="^[+]?[0-9\s\-\(\)]{9,20}$"
+                    title="Неверный формат номера"
+                    aria-errormessage="phone-errors"
+                  /><span
+                    class="contact-us__form__error"
+                    id="phone-errors"
+                    data-js-form-field-errors
+                  ></span>
+                </p>
+                <p class="contact-us__form__field">
+                  <select
+                    class="default-select"
+                    aria-errormessage="marital-errors"
+                    id="maritalStatus"
+                    name="maritalStatus"
+                    required
+                  >
+                    <option value="" selected hidden>Stan cywilny</option>
+                    <option value="Kawaler/Panna">Kawaler/Panna</option>
+                    <option value="Żonaty/Zamężna">Żonaty/Zamężna</option>
+                    <option value="Rozwiedziony/Rozwiedziona">
+                      Rozwiedziony/Rozwiedziona
+                    </option>
+                    <option value="Wdowiec/Wdowa">Wdowiec/Wdowa</option>
+                  </select>
+                  <span
+                    class="contact-us__form__error"
+                    id="marital-errors"
+                    data-js-form-field-errors
+                  ></span>
+                </p>
+                <p class="contact-us__form__field">
+                  <textarea
+                    class="default-textarea"
+                    placeholder="O mnie"
+                    type="text"
+                    id="about"
+                    name="about"
+                    maxlength="1000"
+                    rows="1"
+                    aria-errormessage="textarea-errors"
+                  ></textarea>
+                  <span
+                    class="contact-us__form__error"
+                    id="textarea-errors"
+                    data-js-form-field-errors
+                  ></span>
+                </p>
+                <div
+                  class="info-block"
+                  data-js-info-block
+                  style="display: none"
+                ></div>
+                <div class="contact-us__form__buttons">
+                  <p class="contact-us__form__field">
+                    <input
+                      id="checkbox-accepted"
+                      class="default-checkbox checkbox-hidden"
+                      type="checkbox"
+                      required
+                      aria-errormessage="checkbox-errors"
+                    />
+                    <label for="checkbox-accepted" class="checkbox-label">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Akceptuję regulamin</span>
+                    </label>
+                    <span
+                      class="contact-us__form__error custom-checkbox-error"
+                      id="checkbox-errors"
+                      data-js-form-field-errors
+                    ></span>
+                  </p>
+                  <button class="purple-button">Wysłać</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top container">
+          <div class="footer__contacts">
+            <img
+              class="footer__logo"
+              src="./assets/images/logo.svg"
+              alt="logo"
+            />
+            <div class="footer__contact-item">
+              <img src="./assets/images/phone.svg" alt="phone icon" />
+              <a href="tel:+48690590089" class="link">+48690590089</a>
+            </div>
+            <div class="footer__contact-item">
+              <a href="#" class="footer__link link">Zamów rozmowę</a>
+            </div>
+            <div class="footer__contact-item">
+              <img src="./assets/images/email.svg" alt="email icon" />
+              <a href="mailto:info@enemer.pl" class="link">info@enemer.pl</a>
+            </div>
+            <div class="footer__contact-item">
+              <img src="./assets/images/location.svg" alt="location icon" />
+              <a
+                href="https://maps.google.com/?q=Błonie, Pass 20I, budynek 15, 05-870, Poland"
+                rel="noopener noreferrer"
+                class="link"
+                >Błonie, Pass 20I, budynek 15, 05-870</a
+              >
+            </div>
+          </div>
+          <div class="footer__services">
+            <h4 class="footer__title">Usługi</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item default-text">
+                Usługi logistyczne dla e-commerce
+              </li>
+              <li class="footer__list-item default-text">
+                Outsourcing magazynu
+              </li>
+              <li class="footer__list-item default-text">
+                Outsourcing logistyczny
+              </li>
+              <li class="footer__list-item default-text">
+                Obsługa logistyczna sklepów internetowych
+              </li>
+              <li class="footer__list-item default-text">
+                Logistyka kontraktowa
+              </li>
+            </ul>
+            <a href="#" class="footer__service-link link"
+              >Zobacz wszystkie
+              <img src="./assets/images/arrow-right.svg" alt="arrow right icon"
+            /></a>
+          </div>
+          <nav class="footer__navigation">
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a href="#" class="default-text">O nas</a>
+              </li>
+              <li class="footer__navigation-item default-text">
+                <a href="#" class="default-text">Cennik</a>
+              </li>
+              <li class="footer__navigation-item default-text">
+                <a href="#" class="default-text">Pytania i odpowiedzi</a>
+              </li>
+              <li class="footer__navigation-item default-text">
+                <a href="#" class="default-text">Kontakt</a>
+              </li>
+              <li class="footer__navigation-item default-text">
+                <a href="#" class="default-text">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__company">
+            <p class="gray-averta-ty-text">Space Logistics Sp.z.o.o. 02-727</p>
+            <p class="gray-averta-ty-text">Warszawa ul. Wołodyjowskiego 67A</p>
+            <p class="gray-averta-ty-text">KRS: 0000824771 NIP: 5213888029</p>
+            <p class="gray-averta-ty-text">REGON: 385377605</p>
+          </div>
+        </div>
+        <div class="footer__bottom container">
+          <p class="default-text">Polityka prywatności</p>
+          <a
+            class="footer__developer"
+            href="https://grizzly.by/"
+            target="_blank"
+            class="footer__developer"
+          >
+            <p class="link">dev.grizzly.by</p>
+            <img
+              class="footer__developer-logo"
+              src="./assets//images/grizzly.svg"
+              alt="grizzly_logo"
+            />
+            <p class="link">dev.grizzly.by</p>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script defer src="./scripts/hamb.js"></script>
+    <script defer src="./scripts/validator.js"></script>
+  </body>
+</html>

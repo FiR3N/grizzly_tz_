@@ -1,0 +1,19 @@
+:root {
+  /*--FONT--*/
+  --font-family: 'Averta CY', 'Consolas', 'Times New Roman', sans-serif;
+  --second-font-family:
+    'Averta Demo PE', 'Consolas', 'Times New Roman', sans-serif;
+
+  /*--COLORS--*/
+  --default-black-color: #000000;
+  --default-white-color: #ffffff;
+  --inactive-purple-color: #78599c;
+  --hover-purple-color: #6f39ae;
+  --ligth-gray-color: #f0f0f0;
+  --dark-gray-color: #2e2e2e;
+  --company-gray-color: #bcbcbc;
+  --gray-shadow-color: #f8f8f8;
+  --form-bg-color: rgba(52, 52, 52, 0.8);
+  --error-red-color: red;
+  --success-green-color: green;
+}
